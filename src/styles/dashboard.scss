@@ -1,0 +1,15 @@
+.MuiBadge-colorPrimary {
+  background-color: #141414 !important;
+}
+
+.page-content {
+  .cart-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

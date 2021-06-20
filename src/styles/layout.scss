@@ -1,0 +1,90 @@
+$white: #fff;
+$black: #000;
+$blue: #172269;
+$orange: #e7702e;
+$red: #c04943;
+
+.page-content {
+  margin: 20px;
+  .heading {
+    color: $orange;
+    font-size: 30px;
+    margin: 0 0 10px 0;
+  }
+  .sub-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    margin: 0;
+    color: $blue;
+    div {
+      font-size: 20px;
+      color: $black;
+
+      span {
+        color: $orange;
+      }
+    }
+  }
+  .class-schedule {
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid $black;
+    background-color: $blue;
+    color: $white;
+    tr {
+      height: 60px;
+    }
+    td {
+      border: 1px solid $white;
+      background-color: $white;
+      color: black;
+      text-align: center;
+      &:nth-child(1) {
+        border-left: 0;
+        border-bottom: 0;
+      }
+    }
+    button {
+      background-color: $orange;
+      color: $white;
+      border-radius: 10px;
+      padding: 5px 10px;
+      width: 100px;
+      height: 40px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      &.class-full-btn {
+        background-color: $red;
+        pointer-events: none;
+        &:disabled {
+          opacity: 1;
+        }
+      }
+      &:disabled {
+        cursor: default;
+        opacity: 0.5;
+        pointer-events: none !important;
+      }
+      &:hover {
+        opacity: 0.8;
+      }
+      &.booked-btn {
+        cursor: default;
+        opacity: 0.8;
+        &:disabled {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+  .counter-container {
+    p {
+      margin: 0;
+      color: $black;
+      font-weight: bold;
+    }
+  }
+}
