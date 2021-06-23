@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { classScheduleList } from '../utils/data';
 import { convertDateIntoString, getTimeRange } from '../utils/methods';
+import { NavLink } from 'react-router-dom';
 
 function Cart() {
   const [data, setData] = useState(classScheduleList);
@@ -40,6 +41,9 @@ function Cart() {
           )}
         </tbody>
       </table>
+      <div>
+        <NavLink to='/'>Back to Dashboard</NavLink>
+      </div>
     </div>
   );
 }
